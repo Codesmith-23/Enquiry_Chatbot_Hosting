@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Enquiry Chatbot</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h2 {
+      color: #ff9800;
+    }
+
+    df-messenger {
+      --df-messenger-bot-message: #1e1e1e;      /* Bot bubble */
+      --df-messenger-user-message: #ff9800;     /* User bubble */
+      --df-messenger-font-color: #fff;          /* Text color */
+      --df-messenger-send-icon: #ff9800;        /* Send button */
+      --df-messenger-chat-background-color: #121212;
+      --df-messenger-input-box-color: #1e1e1e;
+      --df-messenger-input-font-color: #fff;
+      --df-messenger-titlebar-color: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to College Enquiry Chatbot</h2>
+  <p>Ask me anything about admissions, courses, or fees!</p>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="College Bot"
+    agent-id="69a311c8-0101-4cfb-9317-1f5da2f34741"
+    language-code="en"
+  ></df-messenger>
+</body>
+</html>
